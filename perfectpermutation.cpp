@@ -2,14 +2,13 @@
 using namespace std;
 
 int main(){
-    int n;
+    int n,j=2;
     cin >> n;
     if(n%2==0){
-        int i =2;
-        while(i<=n){
-            cout << i << "\t";
-            cout << i-1 << "\t";
-            i=i+2;
+        for(int i=1;i<n;i+2){
+            cout << j;
+            cout << i;
+            j+2;
         }
     }
     else
