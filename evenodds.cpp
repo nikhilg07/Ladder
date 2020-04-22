@@ -2,20 +2,17 @@
 #define ll unsigned long long int
 using namespace std;
 int main(){
-    ll n,k;
+    ll n,k,t;
     cin >> n >> k;
-    vector <ll> v;
-    for(int i=1;i<=n;i++){
-        if(i%2 != 0)
-        v.push_back(i);
-    }
-
-    for(int i=1;i<=n;i++){
-        if(i%2 == 0)
-        v.push_back(i);
-    }
-
-    cout << v[k-1];
+    if(n%2==0)
+    t=n/2;
+    else 
+    t=n/2+1;
+    
+    if(k<=t)
+    cout << 2*k - 1;
+    else 
+    cout << 2*(k-t);
 }
 
 
